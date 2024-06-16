@@ -5,6 +5,8 @@ const PORT=3000;
 const bcrypt=require("bcrypt");
 const {createToken,validateToken}=require("./jwt");
 const cookieParser=require("cookie-parser");
+const validator=require("email-validator");
+const { passwordStrength } = require('check-password-strength')
 
 app.use(express.json());
 app.use(cookieParser());
@@ -33,6 +35,10 @@ app.post("/signup",async (req,res)=>{
     }
     const existingUserData=await userData.findOne({username:data.username});
        if(existingUserData)return res.render("UserExists");
+       else if(!(validator.validate(data.email)))return res.render("wrongEmail")
+       else if(!(passwordStrength(data.password).id==3)){
+        console.log(passwordStrength(data.password));
+        return res.render("weakPassword")}
         else{
             try{
             const passwordHash=await bcrypt.hash(data.password,10);
@@ -85,6 +91,6 @@ app.get("/logout",(req,res)=>{
     res.redirect("/login");
 })
 
-app.listen(3000,()=>{
+app.listen(PORT,()=>{
     console.log("port connected");
 })

@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="/login.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <div class="log">
     <div class="text"><h1>LOGIN</h1></div>
     <div class="inputs">
-    <form action="/login" method="post">
+    <form action="/login" method="post" id="loginForm">
         <input placeholder="Username" name="username" type="text">
         <input placeholder="Password" name="password" type="password">
         <input type="submit" id="sub">
+        <div class="g-recaptcha" data-sitekey="6Ld2GvopAAAAAIiB5Ifqn1IQJjXdFWaVAGQrV7_U"></div>
     </form>
     </div>
     <a href="signup">New User registration</a>

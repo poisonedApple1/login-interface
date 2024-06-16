@@ -1,4 +1,4 @@
-*{
+h1{
     color: aliceblue;
 }
 
@@ -7,7 +7,7 @@ body{
 }
 
 .log{
-    height:200px;
+    height:300px;
     width: 50%;
     position: relative;
     top: 100px;
@@ -32,10 +32,17 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    color: aliceblue;
 }
 
 #sub{
     border-radius: 10px;
     background-color: #003d5c;
     color: beige;
+}
+
+.g-recaptcha{
+    margin-top: 25px;
+    position: relative;
+    left: 50px;
 }
