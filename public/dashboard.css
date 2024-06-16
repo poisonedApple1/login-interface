@@ -1,0 +1,41 @@
+*{
+    color: aliceblue;
+}
+
+body{
+    background-color: #1f0021;
+}
+
+#dash{
+    height:200px;
+    width: 50%;
+    position: relative;
+    top: 100px;
+    left: 25%;
+    background-color: #2d031d;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#text{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: #751006;
+    border-radius: 20px;
+    display: flex;
+}
+
+#logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data{
+    display: flex;
+    justify-content:space-around;
+    
+}

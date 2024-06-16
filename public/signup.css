@@ -1,0 +1,44 @@
+
+
+body{
+    background-color: #212224;
+}
+
+h1{
+    color: aliceblue;
+}
+.log{
+    height:200px;
+    width: 50%;
+    position: relative;
+    top: 100px;
+    left: 25%;
+    background-color: #1d2e28;
+    align-items: center;
+    border-radius: 50px;
+    color: #212224;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    color: #040505;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+#sub{
+    border-radius: 10px;
+    background-color: #003d5c;
+    color: beige;
+}
